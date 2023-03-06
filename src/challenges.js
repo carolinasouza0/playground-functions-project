@@ -21,6 +21,10 @@ const concatName = (array) => {
 
 // Desafio 4 - Crie a função footballPoints
 
+const footballPoints = (wins, ties) => {
+  return 3 * wins + ties;
+};
+
 // Desafio 5 - Crie a função highestCount
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
