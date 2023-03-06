@@ -123,6 +123,20 @@ const decode = (string) => {
 
 // Desafio 10 - Crie a função techList
 
+const techList = (array, string) => {
+  let properties = {};
+  let newArray = [];
+  let arraySort = array.sort();
+  arraySort.map((elem) => {
+    properties = {
+      tech: elem,
+      name: string,
+    };
+    newArray.push(properties);
+  });
+  return newArray;
+};
+
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea:
