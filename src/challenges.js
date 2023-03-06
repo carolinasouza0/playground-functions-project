@@ -5,6 +5,10 @@ const compareTrue = (boolean1, boolean2) => {
 };
 // Desafio 2 - Crie a função splitSentence
 
+const splitSentence = (string) => {
+  return string.split(' ');
+};
+
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
