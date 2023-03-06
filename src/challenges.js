@@ -1,5 +1,8 @@
 // Desafio 1 - Crie a função compareTrue
 
+const compareTrue = (boolean1, boolean2) => {
+  return boolean1 === true && boolean2 === true ? true : false;
+};
 // Desafio 2 - Crie a função splitSentence
 
 // Desafio 3 - Crie a função concatName
@@ -20,17 +23,20 @@
 
 // Não modifique essas linhas
 module.exports = {
-  calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
-  calcRectangleArea: typeof calcRectangleArea === 'function' ? calcRectangleArea : (() => {}),
-  calcAllAreas: typeof calcAllAreas === 'function' ? calcAllAreas : (() => {}),
-  catAndMouse: typeof catAndMouse === 'function' ? catAndMouse : (() => {}),
-  compareTrue: typeof compareTrue === 'function' ? compareTrue : (() => {}),
-  concatName: typeof concatName === 'function' ? concatName : (() => {}),
-  decode: typeof decode === 'function' ? decode : (() => {}),
-  encode: typeof encode === 'function' ? encode : (() => {}),
-  fizzBuzz: typeof fizzBuzz === 'function' ? fizzBuzz : (() => {}),
-  footballPoints: typeof footballPoints === 'function' ? footballPoints : (() => {}),
-  highestCount: typeof highestCount === 'function' ? highestCount : (() => {}),
-  splitSentence: typeof splitSentence === 'function' ? splitSentence : (() => {}),
-  techList: typeof techList === 'function' ? techList : (() => {}),
+  calcTriangleArea:
+    typeof calcTriangleArea === 'function' ? calcTriangleArea : () => {},
+  calcRectangleArea:
+    typeof calcRectangleArea === 'function' ? calcRectangleArea : () => {},
+  calcAllAreas: typeof calcAllAreas === 'function' ? calcAllAreas : () => {},
+  catAndMouse: typeof catAndMouse === 'function' ? catAndMouse : () => {},
+  compareTrue: typeof compareTrue === 'function' ? compareTrue : () => {},
+  concatName: typeof concatName === 'function' ? concatName : () => {},
+  decode: typeof decode === 'function' ? decode : () => {},
+  encode: typeof encode === 'function' ? encode : () => {},
+  fizzBuzz: typeof fizzBuzz === 'function' ? fizzBuzz : () => {},
+  footballPoints:
+    typeof footballPoints === 'function' ? footballPoints : () => {},
+  highestCount: typeof highestCount === 'function' ? highestCount : () => {},
+  splitSentence: typeof splitSentence === 'function' ? splitSentence : () => {},
+  techList: typeof techList === 'function' ? techList : () => {},
 };
