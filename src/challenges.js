@@ -63,12 +63,12 @@ const calcAllAreas = (base, height, form) => {
 const catAndMouse = (mouse, cat1, cat2) => {
   let cat1Distance = mouse - cat1;
   let cat2Distance = mouse - cat2;
-  let closest = 0;
+  let closest;
   cat1Distance < 0 && (cat1Distance *= -1);
   cat2Distance < 0 && (cat2Distance *= -1);
 
   if (cat1Distance === cat2Distance) {
-    return 'os gatos trombam e o rato foge';
+    closest = 'os gatos trombam e o rato foge';
   } else if (cat1Distance < cat2Distance) {
     closest = 'cat1';
   } else {
@@ -96,23 +96,19 @@ const fizzBuzz = (array) => {
 
 // Desafio 9 - Crie a função encode e a função decode
 
-const encode = (string) => {
-  return string
-    .replace(/a/g, 1)
-    .replace(/e/g, 2)
-    .replace(/i/g, 3)
-    .replace(/o/g, 4)
-    .replace(/u/g, 5);
-};
+const encode = (string) => string
+  .replace(/a/g, 1)
+  .replace(/e/g, 2)
+  .replace(/i/g, 3)
+  .replace(/o/g, 4)
+  .replace(/u/g, 5);
 
-const decode = (string) => {
-  return string
-    .replace(/1/g, 'a')
-    .replace(/2/g, 'e')
-    .replace(/3/g, 'i')
-    .replace(/4/g, 'o')
-    .replace(/5/g, 'u');
-};
+const decode = (string) => string
+  .replace(/1/g, 'a')
+  .replace(/2/g, 'e')
+  .replace(/3/g, 'i')
+  .replace(/4/g, 'o')
+  .replace(/5/g, 'u');
 
 // Desafio 10 - Crie a função techList
 
