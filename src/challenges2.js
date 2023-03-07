@@ -13,7 +13,8 @@ const errorMessage = (array) => {
   let error = '';
 
   if (array.length > 11 || array.length < 11) {
-    return (error = 'Array com tamanho incorreto.');
+    error = 'Array com tamanho incorreto.';
+    return error;
   }
   array.forEach((elem) => {
     if (elem < 0 || elem > 9 || countIquals(array) >= 3) {
