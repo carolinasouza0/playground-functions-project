@@ -1,8 +1,8 @@
 // Desafio 1 - Crie a função compareTrue
 
-const compareTrue = (boolean1, boolean2) => {
-  return boolean1 === true && boolean2 === true ? true : false;
-};
+const compareTrue = (boolean1, boolean2) =>
+  !!boolean1 === true && boolean2 === true;
+
 // Desafio 2 - Crie a função splitSentence
 
 const splitSentence = (string) => {
